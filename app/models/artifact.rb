@@ -10,6 +10,9 @@ class Artifact < ApplicationRecord
 
   private
 
+  def up;load_to_s3
+  end
+
   def uploaded_file_size
   	if upload
   		errors.add(:upload, "File size must be less than #{self.class::MAX_FILESIZE}") unless upload.size <= self.class::MAX_FILESIZE

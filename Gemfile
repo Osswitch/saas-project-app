@@ -12,6 +12,7 @@ gem 'devise'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'milia', '~>1.3'
+gem 'stripe'
 
 gem 'font-awesome-rails'
 
