@@ -54,7 +54,8 @@
               </li>
             <% end %>
           </ul>
-          <% if current_user %>
+          <ul class="nav navbar-right col-md-4">
+            <% if current_user %>
               <li class="col-md-8 user-name">
                 <%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe, edit_user_registration_path, title: 'Edit Profile' %>
               </li>
@@ -65,6 +66,8 @@
                 <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In')%>
               </li>
           <% end %>
+          </ul>
+          
         </div>
       </div>
     </div>
