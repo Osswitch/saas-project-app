@@ -55,7 +55,7 @@ $(document).ready(function() {
 // set up plan change event listener #tenant_plan id in the form for class cc_form
 	$("#tenant_plan").on('change', function(event) {
 		handlePlanChange($('#tenant_plan :selected').val(), ".cc_form");
-	};
+	});
 
 // call plan change handler so that the plan is set correctly in the drop down whe nteh page loads.
 
